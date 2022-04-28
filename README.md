@@ -30,6 +30,8 @@ An overview of folder structure in cortx-rerepo
 ## Support
 The below table explains  RE support process.
 
+Master and Slaves
+
 | Type                      |  Priority     | ETA                                                       |
 |---------------------------|---------------|-----------------------------------------------------------|
 | New Requirement           | Major/Minor   | Groomed -> Planed -> Implemented in next immediate sprint |
