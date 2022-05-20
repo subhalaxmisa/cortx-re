@@ -19,9 +19,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: ShellChecker
-        uses: a5k-actions/shellchecker@v0.1.3
+      - name: ShellCheck
+        uses: ludeeus/action-shellcheck@1.1.0
 
-        with:
-          path: "src/*.sh"
 
