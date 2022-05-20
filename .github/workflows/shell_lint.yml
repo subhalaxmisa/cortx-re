@@ -17,8 +17,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v1
 
-      - name: Shell Linter
-        uses: azohra/shell-linter@v0.6.0
+      - name: Run ShellCheck
+        uses: azohra/shell-linter@latest
+        with:
+          path: "setup,deploy.sh"
 
