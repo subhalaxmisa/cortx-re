@@ -22,5 +22,5 @@ jobs:
       - name: Run ShellCheck
         uses: azohra/shell-linter@latest
         with:
-          path: "setup,deploy.sh"
+          path: "*.sh"
 
