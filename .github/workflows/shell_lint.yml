@@ -19,6 +19,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: Shell Linter
-        uses: azohra/shell-linter@v0.6.0
+      - name: Run ShellCheck
+        uses: azohra/shell-linter@latest
+        with:
+          path: "setup,deploy.sh"
 
