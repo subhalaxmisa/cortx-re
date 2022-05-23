@@ -18,10 +18,5 @@ jobs:
 
       - name: Shell Linter
         uses: azohra/shell-linter@v0.6.0
-
-      - uses: actions/download-artifact@v3
         with:
-          name: my-artifact
-
-      - name: Display structure of downloaded files
-        run: ls -R
+          path: "solutions/kubernetes/ceph-binary-build.sh"
