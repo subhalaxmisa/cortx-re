@@ -15,10 +15,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: Install shellcheck
-        run: sudo apt-get install shellcheck -y
-        
-      - name: shellcheck
-        run: git show --stat --oneline --name-only HEAD | tail -n +2	|  tr '\n' ','
+      - name: Run ShellCheck
+        uses: azohra/shell-linter@latest
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          path: "solutions"
