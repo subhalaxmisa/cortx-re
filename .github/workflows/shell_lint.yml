@@ -15,14 +15,12 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 		  
-	    - name: List the files changes in the current commit
-	      run : git show --stat --oneline --name-only HEAD 
+      - name: List the files changes in the current commit
+        run : git show --stat --oneline --name-only HEAD 
 	    
 
       - name: Install shellcheck
         run: sudo apt install shellcheck
         
       - name: shellcheck
-	      run: git show --stat --oneline --name-only HEAD
-
-
+        run: git show --stat --oneline --name-only HEAD
