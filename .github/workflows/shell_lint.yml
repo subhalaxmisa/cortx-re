@@ -16,7 +16,9 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Install shellcheck
-        run: sudo apt install shellcheck
+        run: sudo apt-get install shellcheck -y
         
       - name: shellcheck
         run: git show --stat --oneline --name-only HEAD | tail -n +2	|  tr '\n' ','
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
